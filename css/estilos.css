@@ -1,0 +1,120 @@
+/*.maincontainer {
+    display: flex;
+
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: stretch;
+    gap: 5px
+
+
+    grid-column-start: ;
+    grid-row-start: ;
+}
+*/
+
+
+
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: stretch;
+    gap: 5px;
+    }
+
+@media (max-width: 320px) {
+    .main-container {  
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        
+        }
+    }
+
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .main-container {
+        
+        grid-template-columns: 1fr 1fr;  
+        grid-auto-rows: auto;
+        column-gap: 5px;
+
+        
+        }
+    }
+
+
+@media (min-width: 769px) {
+    .main-container {
+        grid-template-columns: repeat(3, 1fr);  
+
+        column-gap: 5px;
+
+        grid-auto-rows: auto;
+        
+    }
+} 
+
+
+
+
+.roja{
+background-color: red;
+width: auto;
+
+}
+
+.azul {
+background-color: blue;
+width: auto;
+}
+
+.lila {
+    background-color: blueviolet;
+    width: auto;
+}
+
+.amarillo { 
+    background-color: yellow;
+    width: auto;
+}
+
+.naranja {
+    background-color: orange;
+    width: auto;
+}
+
+.verde { 
+    background-color: green;
+    width: auto;
+}
+
+.negro { 
+    background-color: black;
+    width: auto;
+}
+
+.rosa { 
+    background-color: pink;
+    width: auto;
+}
+
+.gris { 
+    background-color: grey;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
